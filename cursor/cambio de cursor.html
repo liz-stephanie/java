@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>cambio-cursor</title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="box">
+            <img  src="img/flor´1.jpg" data-alt-src="img/flores1.jpg"/>
+      
+            <img  src="img/flor2.jpg"data-alt-src="img/flores2.jpg"/>
+       
+            <img  src="img/flor3.jpg"data-alt-src="img/flores3.jpg"/> 
+         
+            <img  src="img/flor4.jpg"data-alt-src="img/flores4.jpg"/>
+       
+            <img  src="img/flor5.jpg"data-alt-src="img/flores5.jpg"/>
+   
+            <img  src="img/flor6.jpg"data-alt-src="img/flores6.jpg"/>
+      
+            <img  src="img/flor7.jpg"data-alt-src="img/flores7.jpg"/>
+
+            <img  src="img/flor8.jpg"data-alt-src="img/flores8.jpg"/>
+    </div>
+
+    <script> 
+     
+$(document).ready(
+    function () {
+            
+            $("img").hover(function(){
+               $(this).attr("src","img/flor1.jpg");
+
+         }, function(){
+              $(this).attr('src', $(this).attr('data-alt-src'));
+});
+    
+        });
+
+    </script>
+
+</body>
+
+</html>

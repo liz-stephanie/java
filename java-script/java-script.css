@@ -1,0 +1,57 @@
+/*CSS reset settings here*/
+*{
+ margin: 10px;
+ padding: 10px;
+}
+#wrapper{
+ height: 700px;
+ width: 1400px;
+ background-color: #0C154A ;
+ margin: 0px auto;
+
+}
+#header{
+ height: 150px;
+ background-color: red;
+ margin: 10px;
+ color: white;
+ font-size:36px;
+ border-radius: 25px;
+}
+
+#navigation{
+ height: 350px;
+ width: 250px;
+ background-color: #468E8F;
+ margin: 10px;
+ display: inline-block;
+color: #2EF19E;
+border-radius: 25px;
+}
+#main_content{
+ height: 400px;
+ width: 1000px;
+ background-color: black;
+ margin: 10px;
+ display: inline-block;
+ position: fixed;
+ width: 1050px;
+ height: 350px;
+color: white;
+border-radius: 25px;
+
+ 
+
+}
+#advertisement{
+ height: 100px;
+ width: 1350px;
+ background-color: gray;
+ margin: 10px;
+ display: inline-block;
+ position: fixed;
+ top: 620px;
+ right: 70px;
+border-radius: 25px;
+
+}

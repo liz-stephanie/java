@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+#conteiner{
+    margin: 50px;
+    width: 1000px;
+    height:1000px;
+    position: absolute;
+    display: inline-block;
+}
+#box.img{
+   width: 100px;
+   height: 100px;
+   display: inline-block;
+   position: relative;
+   border-color: black-bold:10px;
+}
+.ninja1{
+    position: absolute;
+    top:100px;left: 100px;
+    display: inline-block;
+    border-color: black;
+    border-radius: 10px;
+}
+.ninja2{
+      position: absolute;
+      top:100px;left: 300px;
+      display: inline-block;
+}
+.ninja3{
+      position: absolute;
+      top:100px;left: 500px;
+      display: inline-block;
+}
+.ninja4{
+      position: absolute;
+      top:100px;left: 700px;
+      display: inline-block;
+}
+.ninja5{
+      position: absolute;
+      top:400px;left: 100px;
+      display: inline-block;
+}
+.ninja6{
+      position: absolute;
+      top:400px;left: 300px;
+      display: inline-block;
+}
+.ninja7{
+      position: absolute;
+      top:400px;left: 500px;
+      display: inline-block;
+}
+.ninja8{
+      position: absolute;
+      top:400px;left: 700px;
+      display: inline-block;
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>ninjas</title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="box">
+            <img id="img1" src="img/ninja1.jpg" class="ninja1">
+        </div>
+        <div class="box">
+            <img id="img2" src="img/ninja2.jpg"  class="ninja2">
+        </div>
+        <div class="box">
+            <img id="img3" src="img/ninja3.jpg" class="ninja3">
+        </div>
+        <div class="box">
+            <img id="img4" src="img/ninja4.jpg"  class="ninja4">
+        </div>
+        <div class="box">
+            <img id="img5" src="img/ninja5.jpg"  class="ninja5">
+        </div>
+        <div class="box">
+            <img id="img6" src="img/ninja6.jpg"  class="ninja6">
+        </div>
+        <div class="box">
+            <img id="img7" src="img/ninja7.jpg"  class="ninja7">
+        </div>
+        <div class="box">
+            <img id="img8" src="img/ninja8.jpg" class="ninja8">
+        </div>
+    </div>
+    <script> 
+      $(document).ready(function () {
+            $('img').click(function () {
+                $(this).fadeOut('slow');
+            });
+            $('button').click(function () {
+                $('img').fadeIn();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
